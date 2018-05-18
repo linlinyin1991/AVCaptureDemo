@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BDFB96EC20AEB6CA0011F5A6 /* ELCameraBaseCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB96E920AEB6CA0011F5A6 /* ELCameraBaseCapture.m */; };
 		BDFB96ED20AEB6CA0011F5A6 /* ELCameraControlCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB96EA20AEB6CA0011F5A6 /* ELCameraControlCapture.m */; };
+		BDFB96F020AECDEB0011F5A6 /* ELCameraSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFB96EF20AECDEB0011F5A6 /* ELCameraSettingView.m */; };
 		BDFCCC9520AD268A0075EBDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFCCC9420AD268A0075EBDB /* AppDelegate.m */; };
 		BDFCCC9820AD268A0075EBDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFCCC9720AD268A0075EBDB /* ViewController.m */; };
 		BDFCCC9B20AD268A0075EBDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFCCC9920AD268A0075EBDB /* Main.storyboard */; };
@@ -16,13 +17,20 @@
 		BDFCCCA020AD268B0075EBDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDFCCC9E20AD268B0075EBDB /* LaunchScreen.storyboard */; };
 		BDFCCCA320AD268B0075EBDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFCCCA220AD268B0075EBDB /* main.m */; };
 		BDFCCCBE20AD8CC80075EBDB /* ELCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFCCCBD20AD8CC80075EBDB /* ELCameraViewController.m */; };
+		E7143F666C052B0A68964CD7 /* Pods_AVCaptureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029C4A4809A4324D5672698E /* Pods_AVCaptureDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029C4A4809A4324D5672698E /* Pods_AVCaptureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVCaptureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BEC919E0599219627D25AB /* Pods-AVCaptureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCaptureDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVCaptureDemo/Pods-AVCaptureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		29160565131E21035090DCA1 /* Pods-AVCaptureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCaptureDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AVCaptureDemo/Pods-AVCaptureDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BDFB96E820AEB6CA0011F5A6 /* ELCameraControlCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCameraControlCapture.h; sourceTree = "<group>"; };
 		BDFB96E920AEB6CA0011F5A6 /* ELCameraBaseCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCameraBaseCapture.m; sourceTree = "<group>"; };
 		BDFB96EA20AEB6CA0011F5A6 /* ELCameraControlCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCameraControlCapture.m; sourceTree = "<group>"; };
 		BDFB96EB20AEB6CA0011F5A6 /* ELCameraBaseCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCameraBaseCapture.h; sourceTree = "<group>"; };
+		BDFB96EE20AECDEB0011F5A6 /* ELCameraSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCameraSettingView.h; sourceTree = "<group>"; };
+		BDFB96EF20AECDEB0011F5A6 /* ELCameraSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCameraSettingView.m; sourceTree = "<group>"; };
+		BDFB96F120AECE990011F5A6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BDFCCC9020AD268A0075EBDB /* AVCaptureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCaptureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFCCC9320AD268A0075EBDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFCCC9420AD268A0075EBDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,12 +50,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7143F666C052B0A68964CD7 /* Pods_AVCaptureDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ADF96ADF8976682278F1C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				029C4A4809A4324D5672698E /* Pods_AVCaptureDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BDFB96E720AEB6CA0011F5A6 /* CameraCapture */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +72,8 @@
 				BDFB96E920AEB6CA0011F5A6 /* ELCameraBaseCapture.m */,
 				BDFB96E820AEB6CA0011F5A6 /* ELCameraControlCapture.h */,
 				BDFB96EA20AEB6CA0011F5A6 /* ELCameraControlCapture.m */,
+				BDFB96EE20AECDEB0011F5A6 /* ELCameraSettingView.h */,
+				BDFB96EF20AECDEB0011F5A6 /* ELCameraSettingView.m */,
 			);
 			path = CameraCapture;
 			sourceTree = "<group>";
@@ -64,6 +83,8 @@
 			children = (
 				BDFCCC9220AD268A0075EBDB /* AVCaptureDemo */,
 				BDFCCC9120AD268A0075EBDB /* Products */,
+				CB2993E77BB982CEF5AA9840 /* Pods */,
+				8ADF96ADF8976682278F1C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +106,7 @@
 				BDFCCC9720AD268A0075EBDB /* ViewController.m */,
 				BDFCCCBC20AD8CC80075EBDB /* ELCameraViewController.h */,
 				BDFCCCBD20AD8CC80075EBDB /* ELCameraViewController.m */,
+				BDFB96F120AECE990011F5A6 /* PrefixHeader.pch */,
 				BDFCCC9920AD268A0075EBDB /* Main.storyboard */,
 				BDFCCC9C20AD268B0075EBDB /* Assets.xcassets */,
 				BDFCCC9E20AD268B0075EBDB /* LaunchScreen.storyboard */,
@@ -94,6 +116,15 @@
 			path = AVCaptureDemo;
 			sourceTree = "<group>";
 		};
+		CB2993E77BB982CEF5AA9840 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29160565131E21035090DCA1 /* Pods-AVCaptureDemo.debug.xcconfig */,
+				09BEC919E0599219627D25AB /* Pods-AVCaptureDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDFCCCA620AD268B0075EBDB /* Build configuration list for PBXNativeTarget "AVCaptureDemo" */;
 			buildPhases = (
+				8BA0004C26A034D3E462928F /* [CP] Check Pods Manifest.lock */,
 				BDFCCC8C20AD268A0075EBDB /* Sources */,
 				BDFCCC8D20AD268A0075EBDB /* Frameworks */,
 				BDFCCC8E20AD268A0075EBDB /* Resources */,
+				E91B8E3EB0454F98A19F9AD3 /* [CP] Embed Pods Frameworks */,
+				4C09123A7DACB1754824AF07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +194,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C09123A7DACB1754824AF07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVCaptureDemo/Pods-AVCaptureDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA0004C26A034D3E462928F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVCaptureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E91B8E3EB0454F98A19F9AD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AVCaptureDemo/Pods-AVCaptureDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AVCaptureDemo/Pods-AVCaptureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDFCCC8C20AD268A0075EBDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,6 +257,7 @@
 				BDFB96ED20AEB6CA0011F5A6 /* ELCameraControlCapture.m in Sources */,
 				BDFCCCA320AD268B0075EBDB /* main.m in Sources */,
 				BDFCCC9520AD268A0075EBDB /* AppDelegate.m in Sources */,
+				BDFB96F020AECDEB0011F5A6 /* ELCameraSettingView.m in Sources */,
 				BDFB96EC20AEB6CA0011F5A6 /* ELCameraBaseCapture.m in Sources */,
 				BDFCCCBE20AD8CC80075EBDB /* ELCameraViewController.m in Sources */,
 			);
@@ -304,10 +393,14 @@
 		};
 		BDFCCCA720AD268B0075EBDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29160565131E21035090DCA1 /* Pods-AVCaptureDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5BL7JK9WGR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AVCaptureDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AVCaptureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -321,10 +414,14 @@
 		};
 		BDFCCCA820AD268B0075EBDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09BEC919E0599219627D25AB /* Pods-AVCaptureDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5BL7JK9WGR;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AVCaptureDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = AVCaptureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
