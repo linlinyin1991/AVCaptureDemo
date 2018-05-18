@@ -8,8 +8,10 @@
 
 #import "ELCameraViewController.h"
 #import "ELCameraControlCapture.h"
+#import "ELCameraSettingView.h"
 
 @interface ELCameraViewController ()
+
 @property (nonatomic, strong) ELCameraControlCapture *cameraCapture;
 
 @end
@@ -32,7 +34,7 @@
 }
 - (void)setUI {
     [self setVideoPreview];
-    [self setTakePhotoBtn];
+    [self setCameraView];
     [self.cameraCapture startSession];
 }
 
@@ -45,12 +47,19 @@
 }
 
 
-- (void)setTakePhotoBtn {
-    UIButton *takeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    takeBtn.frame = CGRectMake(self.view.frame.size.width/2.0 - 30, self.view.frame.size.height - 100, 60, 60);
-    [takeBtn setTitle:@"拍照" forState:UIControlStateNormal];
-    [self.view addSubview:takeBtn];
-    [takeBtn addTarget:self action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];
+- (void)setCameraView {
+    ELCameraSettingView *view = [[ELCameraSettingView alloc] init];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self.view);
+        make.height.equalTo(@100);
+    }];
+    [view.cameraBtn addTarget:self action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];
+    if (!self.cameraCapture.canSwitchCamera) {
+        view.switchBtn.hidden = YES;
+    } else {
+        [view.switchBtn addTarget:self action:@selector(switchCamera) forControlEvents:UIControlEventTouchUpInside];
+    }
 }
 
 - (void)takePhoto {
@@ -65,6 +74,11 @@
         }
     }];
 }
+
+- (void)switchCamera {
+    [self.cameraCapture switchCamera];
+}
+
 - (ELCameraControlCapture *)cameraCapture {
     if (!_cameraCapture) {
         _cameraCapture = [[ELCameraControlCapture alloc] init];

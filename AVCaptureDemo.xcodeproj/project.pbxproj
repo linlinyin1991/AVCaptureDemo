@@ -72,8 +72,6 @@
 				BDFB96E920AEB6CA0011F5A6 /* ELCameraBaseCapture.m */,
 				BDFB96E820AEB6CA0011F5A6 /* ELCameraControlCapture.h */,
 				BDFB96EA20AEB6CA0011F5A6 /* ELCameraControlCapture.m */,
-				BDFB96EE20AECDEB0011F5A6 /* ELCameraSettingView.h */,
-				BDFB96EF20AECDEB0011F5A6 /* ELCameraSettingView.m */,
 			);
 			path = CameraCapture;
 			sourceTree = "<group>";
@@ -104,6 +102,8 @@
 				BDFCCC9420AD268A0075EBDB /* AppDelegate.m */,
 				BDFCCC9620AD268A0075EBDB /* ViewController.h */,
 				BDFCCC9720AD268A0075EBDB /* ViewController.m */,
+				BDFB96EE20AECDEB0011F5A6 /* ELCameraSettingView.h */,
+				BDFB96EF20AECDEB0011F5A6 /* ELCameraSettingView.m */,
 				BDFCCCBC20AD8CC80075EBDB /* ELCameraViewController.h */,
 				BDFCCCBD20AD8CC80075EBDB /* ELCameraViewController.m */,
 				BDFB96F120AECE990011F5A6 /* PrefixHeader.pch */,

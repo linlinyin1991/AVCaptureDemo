@@ -7,7 +7,7 @@
 //
 
 #import "ELCameraSettingView.h"
-#import <Masonry/Masonry.h>
+
 @interface ELCameraSettingView ()
 
 
@@ -33,6 +33,7 @@
         make.size.mas_equalTo(CGSizeMake(60, 60));
         make.centerX.equalTo(self);
     }];
+    
     [self.switchBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(60, 60));
         make.right.bottom.equalTo(self).offset(-20);

@@ -11,7 +11,7 @@
 
 #pragma mark 切换摄像头
 - (BOOL)switchCamera;
-
+- (BOOL)canSwitchCamera;
 #pragma mark 设置闪光灯模式
 - (BOOL)setFlashMode:(AVCaptureFlashMode)flashMode;
 
